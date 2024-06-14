@@ -71,8 +71,7 @@ body.dark-mode .contact-info a {
     color: #80bfff;
 }
 
-.header h1 {
-    margin: 0;
+.header h1 { margin: 0;
 }
 
 .header p {
@@ -106,7 +105,6 @@ body.dark-mode .contact-info a {
     text-align: center;
     margin-bottom: 20px;
 }
-
 .contact-info a {
     display: block;
     margin: 5px 0;
@@ -115,13 +113,93 @@ body.dark-mode .contact-info a {
     transition: color 0.3s;
 }
 
-.skills, .languages {
+.skills-and-languages {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.skills div, .languages div {
-    flex: 1 1 45%;
-    margin: 5px 0;
+.skills, .languages {
+    flex : 1;
+    margin: 10px; }
+
+
+/* HOVER STUFF */
+
+/* header style # */
+.content  {
+    padding-left: 2em;
+}
+
+h2 {
+    position: relative;
+    padding-left: 1.5em; 
+    transition: color 0.3s ease;
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    transition: content 0.3s ease;
+}
+
+h2:hover::before {
+    content: '#';
+    left: 0;
+}
+
+/* list items • */
+
+.li-title {
+    position: relative;
+    padding-left: 1.5em; /* Add padding to make space for the bullet point */
+    cursor: pointer; /* Optional: change cursor to indicate interactivity */
+    transition: color 0.3s ease;
+}
+
+.li-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    transition: content 0.3s ease;
+}
+
+.li-title:hover {
+    color: #555; /* Optional: change color on hover */
+}
+
+.li-title:hover::before {
+    content: '•'; /* Use a bullet point */
+    left: 0;
+}
+
+.li-subtitle {
+    padding-left: 1.5em;
+}
+
+
+/* SKILLS icons */
+
+.icon-section {
+    padding: 20px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon-item {
+    text-align: center;
+}
+
+.icon-item i {
+    font-size: 30px; /* Adjust the size as needed */
+}
+
+.icon-item p {
+    margin: 0;
+    font-size: 14px;
 }
 
