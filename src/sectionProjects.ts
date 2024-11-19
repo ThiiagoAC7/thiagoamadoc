@@ -40,7 +40,7 @@ function sectionProjects(element: HTMLDivElement) {
             "title" : "Linux Configuration Files (.dotfiles)",
             "subtitle" : "my current .dotfiles ",
             "technologies" : "linux, i3-wm, polybar, zsh, wezterm, rofi",
-            "github" : "https://github.com/thiiagoac7/config"
+            "github" : "https://github.com/thiiagoac7/.config"
         },
 
         {
