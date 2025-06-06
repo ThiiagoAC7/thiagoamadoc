@@ -1,7 +1,7 @@
 function sectionHeader(header: HTMLDivElement) {
     header.innerHTML = `
         <h1>Thiago Amado Costa</h1>
-        <p>Software Engineer | Data Science | ML | AI | Computer Science Student</p>
+        <p> Master's Student in Computer Science | Data Science | ML | AI | </p>
         <p>
             <i class="fas fa-envelope"></i> <a href="mailto:thiagoamadocosta@gmail.com">thiagoamadocosta@gmail.com</a> |
             <i class="devicon-linkedin-plain"></i> <a href="https://www.linkedin.com/in/thiagoamadocosta/">LinkedIn</a> | 

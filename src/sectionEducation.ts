@@ -4,6 +4,13 @@ function sectionEducation(element: HTMLDivElement) {
         {
             name: "Pontifícia Universidade Católica de Minas Gerais",
             degree: "Computer Science",
+            major: "Master's Degree",
+            start: "03/2025",
+            end: ""
+        },
+        {
+            name: "Pontifícia Universidade Católica de Minas Gerais",
+            degree: "Computer Science",
             major: "Bachelor's Degree",
             start: "07/2019",
             end: "12/2024"

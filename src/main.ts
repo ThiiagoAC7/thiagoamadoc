@@ -14,14 +14,16 @@ function _selectElement(className: string): HTMLDivElement {
 
 const app = _selectElement('app')
 
+document.body.classList.add('dark-mode'); // dark mode by default
+
 app.innerHTML = `
   <div class="container">
-    <i id="mode-switch" class="fas fa-moon"></i>
+    <i id="mode-switch" class="fas fa-sun"></i>
     <div id="header" class="header"></div>
     <div id="section-summary" class="section"></div>
     <div id="section-skills" class="section"></div>
-    <div id="section-experience" class="section"></div>
     <div id="section-education" class="section"></div>
+    <div id="section-experience" class="section"></div>
     <div id="section-projects" class="section"></div>
   </div>
 `
