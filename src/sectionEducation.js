@@ -1,5 +1,4 @@
-function sectionEducation(element: HTMLDivElement) {
-
+function sectionEducation(element) {
     const educations = [
         {
             name: "Pontifícia Universidade Católica de Minas Gerais",
@@ -22,29 +21,21 @@ function sectionEducation(element: HTMLDivElement) {
             start: "09/2023",
             end: "02/2024"
         }
-    
     ]
 
     const content = educations.map(education => `
         <li>
-            <div class="li-title">
-                <strong>${education.name}</strong>
-            </div>
-            <div class="li-subtitle">
-                ${education.degree}<br>
-                ${education.major}<br>
-                ${education.start} - ${education.end}
-            </div>
+            <strong>${education.name}</strong>
+            <div class="edu-detail">${education.degree} - ${education.major}</div>
+            <div class="edu-date">${education.start}${education.end ? ' - ' + education.end : ''}</div>
         </li>
-    `).join('');
+    `).join('')
 
     element.innerHTML = `
         <h2>Education</h2>
-        <div class="content">
-            <ul>
-                ${content}
-            </ul>
-        </div>
+        <ul>
+            ${content}
+        </ul>
     `
 }
 
