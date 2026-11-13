@@ -1,0 +1,169 @@
+@import "@fontsource/iosevka/400.css";
+@import "@fontsource/iosevka/400-italic.css";
+@import "@fontsource/iosevka/500.css";
+@import "@fontsource/iosevka/600.css";
+@import "@fontsource/iosevka/700.css";
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *, [data-theme="dark"], [data-theme="dark"] *));
+
+@theme inline {
+  --font-sans: "Iosevka", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-mono: "Iosevka", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+
+  --color-graph-accent: var(--graph-accent);
+  --color-graph-accent-2: var(--graph-accent-2);
+  --color-graph-accent-3: var(--graph-accent-3);
+  --color-graph-frame: var(--graph-frame);
+  --color-graph-muted: var(--graph-muted);
+  --color-graph-faint: var(--graph-faint);
+  --color-contrast-14: var(--contrast-14);
+  --color-contrast-23: var(--contrast-23);
+  --color-contrast-45: var(--contrast-45);
+  --color-contrast-70: var(--contrast-70);
+}
+
+:root {
+  color-scheme: light;
+  --background: #ffffff;
+  --surface: #f7f7f6;
+  --graph-surface: #ffffff;
+  --foreground: #111214;
+  --border: oklch(0.2 0.01 255 / 0.14);
+  --destructive: oklch(0.55 0.21 25);
+
+  --graph-accent: oklch(0.46 0.19 258);
+  --graph-accent-2: oklch(0.48 0.14 195);
+  --graph-accent-3: oklch(0.54 0.13 145);
+  --graph-frame: oklch(0.2 0.01 255 / 0.27);
+  --graph-muted: oklch(0.47 0.01 255);
+  --graph-faint: oklch(0.88 0.005 255);
+  --contrast-14: oklch(0.91 0.004 255);
+  --contrast-23: oklch(0.79 0.006 255);
+  --contrast-45: oklch(0.5 0.01 255);
+  --contrast-70: oklch(0.27 0.01 255);
+}
+
+.dark {
+  color-scheme: dark;
+  --background: #0c0d10;
+  --surface: #13151a;
+  --graph-surface: #0c0d10;
+  --foreground: #edf0f4;
+  --border: oklch(0.88 0.01 250 / 0.14);
+  --destructive: oklch(0.68 0.18 22);
+
+  --graph-accent: oklch(0.73 0.14 248);
+  --graph-accent-2: oklch(0.75 0.11 190);
+  --graph-accent-3: oklch(0.75 0.12 150);
+  --graph-frame: oklch(0.66 0.01 250 / 0.36);
+  --graph-muted: oklch(0.64 0.01 250);
+  --graph-faint: oklch(0.26 0.01 250);
+  --contrast-14: oklch(0.21 0.01 250);
+  --contrast-23: oklch(0.33 0.01 250);
+  --contrast-45: oklch(0.62 0.01 250);
+  --contrast-70: oklch(0.84 0.01 250);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-mono);
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    overflow-x: hidden;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@utility graph-frame {
+  background-image:
+    repeating-linear-gradient(to right, var(--graph-frame) 0 2px, transparent 2px 7px),
+    repeating-linear-gradient(to bottom, var(--graph-frame) 0 2px, transparent 2px 7px),
+    repeating-linear-gradient(to right, var(--graph-frame) 0 2px, transparent 2px 7px),
+    repeating-linear-gradient(to bottom, var(--graph-frame) 0 2px, transparent 2px 7px);
+  background-repeat: repeat-x, repeat-y, repeat-x, repeat-y;
+  background-position: 0 0, 100% 0, 0 100%, 0 0;
+  background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+}
+
+@utility graph-rule {
+  height: 1px;
+  background-image: repeating-linear-gradient(to right, var(--graph-frame) 0 2px, transparent 2px 7px);
+}
+
+@utility graph-rule-y {
+  width: 1px;
+  background-image: repeating-linear-gradient(to bottom, var(--graph-frame) 0 2px, transparent 2px 7px);
+}
+
+/* subtle drafting-table margin dot field outside the main reading column */
+.monograph-field {
+  background-image: radial-gradient(var(--graph-frame) 0.75px, transparent 0.75px);
+  background-size: 24px 24px;
+}
+
+/* crisp technical monograph prose typography for MDX outside framed graphs */
+.monograph-prose > p {
+  max-width: 72ch;
+  color: var(--foreground);
+  font-size: 0.96rem;
+  line-height: 1.72;
+}
+
+.monograph-prose > p + p {
+  margin-top: 1rem;
+}
+
+.monograph-prose > figure,
+.monograph-prose > div.my-plate {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.monograph-prose a:not(.no-prose-link) {
+  color: var(--foreground);
+  text-decoration: underline;
+  text-decoration-color: var(--graph-frame);
+  text-decoration-style: dashed;
+  text-underline-offset: 0.22em;
+  transition: color 140ms ease, text-decoration-color 140ms ease;
+}
+
+.monograph-prose a:not(.no-prose-link):hover {
+  color: var(--graph-accent);
+  text-decoration-color: var(--graph-accent);
+}
+
+.monograph-prose code:not(pre code) {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  padding: 0.08em 0.36em;
+  font-size: 0.88em;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+    color: #111214 !important;
+  }
+}
