@@ -1,8 +1,10 @@
-import type { Lang } from "@/lib/lang";
+import type { Lang } from "@/lib/preferences";
 
 export type ProjectEntry = {
   id: string;
   title: Record<Lang, string>;
+  year: Record<Lang, string>;
+  featured?: boolean;
   ongoing?: boolean;
   highlights: Record<Lang, string[]>;
   technologies: string[];
@@ -16,6 +18,8 @@ export const PROJECTS: ProjectEntry[] = [
       en: "Characterizing Co-Commenter Behavior in Large Scale YouTube Video Comment Sessions",
       pt: "Characterizing Co-Commenter Behavior in Large Scale YouTube Video Comment Sessions",
     },
+    year: { en: "2025–", pt: "2025–" },
+    featured: true,
     ongoing: true,
     highlights: {
       en: [
@@ -37,6 +41,8 @@ export const PROJECTS: ProjectEntry[] = [
       en: "Semantic-Driven BERTopic: Comparative Analysis of Embedding Techniques",
       pt: "Análise Comparativa de Embeddings para o Modelo Semantic-Driven BERTopic",
     },
+    year: { en: "2024", pt: "2024" },
+    featured: true,
     highlights: {
       en: [
         "Academic project implementing a semantic-driven topic modeling pipeline combining Sentence Transformers with UMAP dimensionality reduction and HDBSCAN clustering, integrated with the OCTIS evaluation framework. Applied a comparative methodology across embedding techniques (SimCSE, GTE-multilingual, MPNet) with a coherence-driven topic merging step to refine cluster outputs.",
@@ -63,6 +69,8 @@ export const PROJECTS: ProjectEntry[] = [
       en: "Context-Aware Implicit Hate Speech Detection",
       pt: "Context-Aware Implicit Hate Speech Detection",
     },
+    year: { en: "2024", pt: "2024" },
+    featured: true,
     highlights: {
       en: [
         "Translated implicit hate speech datasets (IHC, SBIC, DynaHate) from English to Portuguese through machine translation, with quality assessment via COMETKIWI and SBERT metrics. Adapted and benchmarked the SHAREDCON contrastive learning method, which clusters implicit speech based on shared semantics, for Portuguese-language detection.",
@@ -87,6 +95,8 @@ export const PROJECTS: ProjectEntry[] = [
       en: "Identifying and Analyzing Communities in YouTube Comment Sections",
       pt: "Identificação e Análise de Comunidades em Seções de Comentários do YouTube",
     },
+    year: { en: "2024", pt: "2024" },
+    featured: true,
     highlights: {
       en: [
         "Academic research project exploring interaction patterns and community dynamics in YouTube comment sections, focusing on content creators targeting younger audiences. Built an analysis system combining community detection with the Louvain algorithm, NLP techniques including topic modeling and sentiment analysis, and clustering approaches.",
@@ -99,11 +109,27 @@ export const PROJECTS: ProjectEntry[] = [
     github: "https://github.com/ThiiagoAC7/crawling_youtube",
   },
   {
+    id: "linux-dotfiles",
+    title: {
+      en: "Linux Configuration Files (.dotfiles)",
+      pt: "Arquivos de Configuração Linux (.dotfiles)",
+    },
+    year: { en: "Ongoing", pt: "Contínuo" },
+    featured: true,
+    highlights: {
+      en: ["Personal Linux desktop configuration files across i3-wm, polybar, zsh, wezterm, and rofi."],
+      pt: ["Arquivos pessoais de configuração do ambiente desktop Linux (i3-wm, polybar, zsh, wezterm, rofi)."],
+    },
+    technologies: ["Linux", "i3-wm", "polybar", "zsh", "wezterm", "rofi"],
+    github: "https://github.com/thiiagoac7/.config",
+  },
+  {
     id: "ml-ops-ingestion",
     title: {
       en: "ML Application: Data Ingestion, Quality Control, and Prediction",
       pt: "Aplicação de ML: Ingestão de Dados, Controle de Qualidade e Predição",
     },
+    year: { en: "2023", pt: "2023" },
     highlights: {
       en: [
         "ML-powered application focused on the operational side, using Airflow for automated data ingestion, data quality control, and scheduled model predictions.",
@@ -121,6 +147,7 @@ export const PROJECTS: ProjectEntry[] = [
       en: "NLP Sentiment Analysis",
       pt: "Análise de Sentimentos com PLN",
     },
+    year: { en: "2023", pt: "2023" },
     highlights: {
       en: [
         "Sentiment analysis using a Fully Connected Neural Network and a Recurrent Neural Network.",
@@ -138,6 +165,7 @@ export const PROJECTS: ProjectEntry[] = [
       en: "Data Analysis of Amazon Deforestation Datasets",
       pt: "Análise de Dados de Desmatamento na Amazônia",
     },
+    year: { en: "2023", pt: "2023" },
     highlights: {
       en: [
         "Data analysis and visualization of different Amazon deforestation and climate datasets.",
@@ -155,6 +183,7 @@ export const PROJECTS: ProjectEntry[] = [
       en: "AI Image Generated Dataset",
       pt: "Dataset de Imagens Geradas por IA",
     },
+    year: { en: "2023", pt: "2023" },
     highlights: {
       en: [
         "Creation of a Raccoon dataset using AI-generated images, then used to retrain and compare YOLO v8 models.",
@@ -172,6 +201,7 @@ export const PROJECTS: ProjectEntry[] = [
       en: "Computer Graphics Algorithms",
       pt: "Algoritmos de Computação Gráfica",
     },
+    year: { en: "2022", pt: "2022" },
     highlights: {
       en: [
         "TKInter GUI and Python implementation of computer graphics algorithms: 2D transformations, DDA and Bresenham line drawing, Bresenham circle drawing, and Cohen-Sutherland / Liang-Barsky line clipping.",
@@ -189,6 +219,7 @@ export const PROJECTS: ProjectEntry[] = [
       en: "Deterministic Finite Automaton Minimization Algorithm",
       pt: "Algoritmo de Minimização de Autômatos Finitos Determinísticos",
     },
+    year: { en: "2022", pt: "2022" },
     highlights: {
       en: [
         "Implementation of the O(n^2) and O(n log n) DFA minimization algorithms in Python, following Blum (1996) and Hopcroft (1971).",
@@ -206,6 +237,7 @@ export const PROJECTS: ProjectEntry[] = [
       en: "NeoVim Config",
       pt: "Configuração NeoVim",
     },
+    year: { en: "Ongoing", pt: "Contínuo" },
     highlights: {
       en: ["Personal modular Neovim configuration."],
       pt: ["Configuração pessoal modular do Neovim."],
@@ -219,6 +251,7 @@ export const PROJECTS: ProjectEntry[] = [
       en: "Wezterm Session Manager",
       pt: "Wezterm Session Manager",
     },
+    year: { en: "Ongoing", pt: "Contínuo" },
     highlights: {
       en: [
         "Fork of the original wezterm-session-manager with improvements to workspace saving, loading from saved workspaces, workspace deletion, and other workflow enhancements.",
@@ -229,18 +262,5 @@ export const PROJECTS: ProjectEntry[] = [
     },
     technologies: ["Lua", "Wezterm"],
     github: "https://github.com/ThiiagoAC7/wezterm-session-manager",
-  },
-  {
-    id: "linux-dotfiles",
-    title: {
-      en: "Linux Configuration Files (.dotfiles)",
-      pt: "Arquivos de Configuração Linux (.dotfiles)",
-    },
-    highlights: {
-      en: ["Personal Linux desktop configuration files."],
-      pt: ["Arquivos pessoais de configuração do ambiente desktop Linux."],
-    },
-    technologies: ["Linux", "i3-wm", "polybar", "zsh", "wezterm", "rofi"],
-    github: "https://github.com/thiiagoac7/.config",
   },
 ];
