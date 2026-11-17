@@ -36,6 +36,8 @@ export type CvCopy = {
   themeAriaLight: string;
   themeAriaDark: string;
   emailLabel: string;
+  wallpapersLabel: string;
+  backToCvLabel: string;
   sections: SectionNavItem[];
   sectionTitles: {
     about: string;
@@ -67,6 +69,8 @@ export const CV_DATA: Record<Lang, CvCopy> = {
     themeAriaLight: "Switch to light mode",
     themeAriaDark: "Switch to dark mode",
     emailLabel: "email ↗",
+    wallpapersLabel: "Wallpapers",
+    backToCvLabel: "← Curriculum Vitae",
     sections: [
       { num: "01", id: "about", label: "About & Research" },
       { num: "02", id: "experience", label: "Experience" },
@@ -166,6 +170,8 @@ export const CV_DATA: Record<Lang, CvCopy> = {
     themeAriaLight: "Mudar para modo claro",
     themeAriaDark: "Mudar para modo escuro",
     emailLabel: "e-mail ↗",
+    wallpapersLabel: "Wallpapers",
+    backToCvLabel: "← Currículo",
     sections: [
       { num: "01", id: "about", label: "Sobre & Pesquisa" },
       { num: "02", id: "experience", label: "Experiência" },

@@ -1,39 +1,65 @@
+import * as React from "react";
 import clsx from "clsx";
 
 import type { CvCopy } from "@/data/cv";
-import type { Lang, ThemeMode } from "@/lib/preferences";
+import { routeHref, type Lang, type PageRoute, type ThemeMode } from "@/lib/preferences";
 
 type SidebarRailProps = {
   copy: CvCopy;
   lang: Lang;
   theme: ThemeMode;
+  route: PageRoute;
+  baseUrl: string;
   activeSection: string;
   photoHref: string;
   resumeHref: string;
   curriculoHref: string;
+  onNavigate: (route: PageRoute) => void;
   onSelectLang: (lang: Lang) => void;
   onToggleTheme: () => void;
 };
+
+function isPlainLeftClick(e: React.MouseEvent<HTMLAnchorElement>) {
+  return e.button === 0 && !e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey;
+}
 
 export function SidebarRail({
   copy,
   lang,
   theme,
+  route,
+  baseUrl,
   activeSection,
   photoHref,
   resumeHref,
   curriculoHref,
+  onNavigate,
   onSelectLang,
   onToggleTheme,
 }: SidebarRailProps) {
+  const cvUrl = routeHref("cv", baseUrl);
+  const wallpapersUrl = routeHref("wallpapers", baseUrl);
+
+  function handleRouteClick(target: PageRoute) {
+    return (e: React.MouseEvent<HTMLAnchorElement>) => {
+      if (!isPlainLeftClick(e)) return;
+      e.preventDefault();
+      onNavigate(target);
+    };
+  }
+
   return (
     <aside className="rail">
       <div className="rail-head">
-        <div className="avatar-slot">
+        <a href={cvUrl} onClick={handleRouteClick("cv")} className="avatar-slot">
           <img src={photoHref} alt="Thiago Amado Costa" className="avatar-img" />
-        </div>
+        </a>
         <div>
-          <h1 className="rail-name">Thiago Amado Costa</h1>
+          <h1 className="rail-name">
+            <a href={cvUrl} onClick={handleRouteClick("cv")} className="rail-name-link">
+              Thiago Amado Costa
+            </a>
+          </h1>
           <p className="rail-sub">
             {copy.degreeLine}
             <br />
@@ -43,15 +69,39 @@ export function SidebarRail({
       </div>
 
       <nav aria-label={copy.navAriaLabel} className="no-print rail-nav">
-        {copy.sections.map((section) => (
-          <a
-            key={section.id}
-            href={`#${section.id}`}
-            className={clsx(activeSection === section.id && "is-active")}
-          >
-            <span>{section.num}.</span> {section.label}
-          </a>
-        ))}
+        {route === "cv" ? (
+          <>
+            {copy.sections.map((section) => (
+              <a
+                key={section.id}
+                href={`#${section.id}`}
+                className={clsx(activeSection === section.id && "is-active")}
+              >
+                <span>{section.num}.</span> {section.label}
+              </a>
+            ))}
+            <a
+              href={wallpapersUrl}
+              onClick={handleRouteClick("wallpapers")}
+              className="rail-page-link"
+            >
+              <span>→</span> {copy.wallpapersLabel}
+            </a>
+          </>
+        ) : (
+          <>
+            <a href={cvUrl} onClick={handleRouteClick("cv")}>
+              {copy.backToCvLabel}
+            </a>
+            <a
+              href={wallpapersUrl}
+              onClick={handleRouteClick("wallpapers")}
+              className="is-active"
+            >
+              <span>•</span> {copy.wallpapersLabel}
+            </a>
+          </>
+        )}
       </nav>
 
       <div className="rail-links">

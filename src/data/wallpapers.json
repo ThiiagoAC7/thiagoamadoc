@@ -1,0 +1,611 @@
+[
+  {
+    "path": "blue_purple/a_road_with_cars_driving_on_it.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 2981616,
+    "sha": "2b8c41d4b64ef8ac071d3aab76f47dd3624320e7"
+  },
+  {
+    "path": "blue_purple/beco_japanese_cyberpunk.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 986666,
+    "sha": "54d6b1092078c5eba51204ef787485b8b7bbbca0"
+  },
+  {
+    "path": "blue_purple/blue_eye_samurai.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 4066405,
+    "sha": "748b28057e6875302e49bc145b5811b2d88e9f9d"
+  },
+  {
+    "path": "blue_purple/castelin_doidao.jpg",
+    "width": 1200,
+    "height": 824,
+    "bytes": 357471,
+    "sha": "1501955939796cae1cd5a96efa4784cde5408921"
+  },
+  {
+    "path": "blue_purple/cyberpunk_city_pixel.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 318822,
+    "sha": "4907db9033aba3ca280a2cc756279ec002259975"
+  },
+  {
+    "path": "blue_purple/firewatch_tower.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 1791835,
+    "sha": "d143864d49f1580d79a92ca2d8af70fe337021d2"
+  },
+  {
+    "path": "blue_purple/gruv-wavesl.png",
+    "width": 3840,
+    "height": 2160,
+    "bytes": 621150,
+    "sha": "6d4ce32614f38bda27601d8e6d2a0cad963d53fd"
+  },
+  {
+    "path": "blue_purple/kalmahul-night-guardian.jpg",
+    "width": 1920,
+    "height": 1035,
+    "bytes": 280778,
+    "sha": "62d9f8f9b75d83e8f294b189aafe9e7acc5ac325"
+  },
+  {
+    "path": "blue_purple/neon_dark_blue_night.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 1285990,
+    "sha": "9a2bce170f745019ff55c3c311202fdb71143dce"
+  },
+  {
+    "path": "blue_purple/parisdountoun.jpg",
+    "width": 4096,
+    "height": 2746,
+    "bytes": 2013797,
+    "sha": "9575f630cd51070142fea5c161651cb7726225f7"
+  },
+  {
+    "path": "blue_purple/poste_night_lights.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 2350710,
+    "sha": "8f1392e358faa6f320941c6ea7a42233286c7664"
+  },
+  {
+    "path": "blue_purple/stray-dark-alley.jpg",
+    "width": 2560,
+    "height": 1440,
+    "bytes": 377245,
+    "sha": "a6ad2f0dfd88f5583b16ab00f08f7f4d38d9631b"
+  },
+  {
+    "path": "blue_purple/surfing-dogs.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 4184186,
+    "sha": "fcd4c3238e415757a26bc627ff73affa78240d61"
+  },
+  {
+    "path": "blue_purple/the-witcher.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 287282,
+    "sha": "1d96eac86e121c240e4167124785becd423a614e"
+  },
+  {
+    "path": "dark/a_black_sand_with_white_foamy_waves.png",
+    "width": 3840,
+    "height": 2400,
+    "bytes": 13263705,
+    "sha": "8a0c94cb85ab091b4b6661d1f1659ecdff2498f6"
+  },
+  {
+    "path": "dark/a_pair_of_playing_cards_on_a_black_surface.jpg",
+    "width": 5583,
+    "height": 3722,
+    "bytes": 1833296,
+    "sha": "2f64fd886bad6aa024a29a392f988b1b09eec3c6"
+  },
+  {
+    "path": "dark/a_street_lights_at_night_01.jpg",
+    "width": 1920,
+    "height": 1199,
+    "bytes": 165845,
+    "sha": "184827f04c9186d4d3085ce9dec0f58facba37fe"
+  },
+  {
+    "path": "dark/a_video_game_screen_with_trees_and_bushes.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 265473,
+    "sha": "c57bb304f6d28972effbf8bac64aac007eaa774e"
+  },
+  {
+    "path": "dark/cave_wolf.jpg",
+    "width": 2560,
+    "height": 1600,
+    "bytes": 311393,
+    "sha": "661d9737ffa22a9b8ba312848ce4ba6f7de11b56"
+  },
+  {
+    "path": "dark/cool-skull.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 249089,
+    "sha": "b22c04c06b8101656404623706043e549338fa7e"
+  },
+  {
+    "path": "dark/dark_fantasy.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 789872,
+    "sha": "942edcffbd3db05c9551ef9c0d4930a217ef73b7"
+  },
+  {
+    "path": "dark/dark_greek_statue.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 77979,
+    "sha": "0cef092f6a6f4963ffdc2a9a87835c973ded52f7"
+  },
+  {
+    "path": "dark/dark_snowy_street_animestyle.jpg",
+    "width": 3840,
+    "height": 2160,
+    "bytes": 677265,
+    "sha": "c85d62f48e96012a58b51c8a0d6e1e22c7784111"
+  },
+  {
+    "path": "dark/dark_van_gogh.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 4191721,
+    "sha": "dcd1340b54bda0af692402f614e1e3ca5aa5addd"
+  },
+  {
+    "path": "dark/darksouls_bonfire.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 72474,
+    "sha": "715c19a4840ef46f40ce1fc10e20fd85c73cebc3"
+  },
+  {
+    "path": "dark/debian_grey_swirl.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 81070,
+    "sha": "d84bd8ae581ff1eeb545d79a52523daeea12d3f2"
+  },
+  {
+    "path": "dark/dragaozao_japones.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 349471,
+    "sha": "8ab2db7e2ee43e384f0c605c5b50d75be4a9720c"
+  },
+  {
+    "path": "dark/farol.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 134959,
+    "sha": "ae8eca48a600c1977684556cc53d91a25ca7f1bf"
+  },
+  {
+    "path": "dark/gnu.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 351170,
+    "sha": "b04f82be21c9188bb89b9686984109f43ee7ce1c"
+  },
+  {
+    "path": "dark/great-wave-of-kanagawa-gruvbox.png",
+    "width": 2559,
+    "height": 1439,
+    "bytes": 287964,
+    "sha": "cb4f07373b06be01200b5f07064f604aaa1d7a65"
+  },
+  {
+    "path": "dark/grey_mountains.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 3368167,
+    "sha": "6345fcde3564d5da993a75b489408113fcc669df"
+  },
+  {
+    "path": "dark/gruv-focus.png",
+    "width": 4330,
+    "height": 2436,
+    "bytes": 39716,
+    "sha": "c1b2af4fdf0646d6c8b4d563d4aa6374e3632bc3"
+  },
+  {
+    "path": "dark/gruv-kanji.png",
+    "width": 3840,
+    "height": 2160,
+    "bytes": 161405,
+    "sha": "7cef8722cf5bd16a578063b2f30d4bcecb017fc4"
+  },
+  {
+    "path": "dark/gruv-samurai-cyberpunk2077.png",
+    "width": 3840,
+    "height": 2160,
+    "bytes": 120066,
+    "sha": "4fb8f8a03484d3e2e30d97c6f4d39c1a88b7154b"
+  },
+  {
+    "path": "dark/gruv_night_moon.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 146591,
+    "sha": "afbcc77a30395c997b2dbf8b8fa48eae2429e515"
+  },
+  {
+    "path": "dark/gruv_old_computer.jpg",
+    "width": 3840,
+    "height": 2160,
+    "bytes": 518297,
+    "sha": "af213ccfc7582d340c72f5090fa302076e869f95"
+  },
+  {
+    "path": "dark/gruvbox-lsd-gril.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 164330,
+    "sha": "18aa262c3a941c703a196488472d2727d6b52bc9"
+  },
+  {
+    "path": "dark/gruvbox-pacman-full.png",
+    "width": 4264,
+    "height": 2400,
+    "bytes": 102951,
+    "sha": "5dd275299be6d55ad691a9e9defdcf48327935f8"
+  },
+  {
+    "path": "dark/gruvbox-rainbow-nix.png",
+    "width": 3480,
+    "height": 2160,
+    "bytes": 289512,
+    "sha": "9832948ea1fe17570298193b7ebe83e3a7afc7ee"
+  },
+  {
+    "path": "dark/gruvbox-skull.png",
+    "width": 2732,
+    "height": 1536,
+    "bytes": 511109,
+    "sha": "661b35b7003634ce499ad113a6283e1fcd66dcc0"
+  },
+  {
+    "path": "dark/gruvbox_dark_waterfall.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 108610,
+    "sha": "1dd92fdfff20e463a9f5df4ea8fc5f6ae48c49b5"
+  },
+  {
+    "path": "dark/gruvbox_minimal_space.png",
+    "width": 2560,
+    "height": 1600,
+    "bytes": 58482,
+    "sha": "65d74d8c226332b28686fe714f82420180b06e85"
+  },
+  {
+    "path": "dark/gruvbox_spac.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 145925,
+    "sha": "5b72abdfb068c9cb268f85fac895532f4ba509c0"
+  },
+  {
+    "path": "dark/gruvy-night-teddybear.jpg",
+    "width": 2500,
+    "height": 1600,
+    "bytes": 118342,
+    "sha": "81c77adaafb4ea156ba3c2da68fda9a703f38605"
+  },
+  {
+    "path": "dark/pacman-ghosts_gruv.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 16172,
+    "sha": "021abeb1b3595a8cd0b9303eeeac61226cd0862a"
+  },
+  {
+    "path": "dark/sky_whale.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 5233603,
+    "sha": "080d8ffc232b0e9fd6cb049cb9063e5f8a221807"
+  },
+  {
+    "path": "dark/solar-system-minimal.png",
+    "width": 2880,
+    "height": 1800,
+    "bytes": 709122,
+    "sha": "9585e21f3b0e2f601ff6e250b41c5da6a764a746"
+  },
+  {
+    "path": "dark/sunset.jpg",
+    "width": 2900,
+    "height": 1625,
+    "bytes": 508621,
+    "sha": "27e12f02643f8d4993ba6b7362ac30d5a73517b6"
+  },
+  {
+    "path": "dark_souls/artorias_the_abyss_walker.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 200665,
+    "sha": "98e4ec74479a83e76e92587fedd1d94f38346b1d"
+  },
+  {
+    "path": "dark_souls/ds3_irithyll_of_the_boreal_valley.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 77996,
+    "sha": "4fdef414e9dbec0cc47a731e7df03b21f6ded85e"
+  },
+  {
+    "path": "dark_souls/ds_onion_bro_solaire.png",
+    "width": 2400,
+    "height": 1009,
+    "bytes": 5631451,
+    "sha": "a9c091f215a512c5b6c768d5f9861e9b47defd57"
+  },
+  {
+    "path": "dark_souls/gruvboxified_rest_bonfire.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 123343,
+    "sha": "51df911975133aa269f72ac71e6fcb17688fd1a4"
+  },
+  {
+    "path": "dark_souls/rest_bonfire.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 163263,
+    "sha": "31c0bbaa848fd6595e5c553cafd70e43af4344b7"
+  },
+  {
+    "path": "dark_souls/Sif.png",
+    "width": 2560,
+    "height": 1440,
+    "bytes": 2614879,
+    "sha": "49099779d4dbcc67c0e1c0885d86869b11cbc0d7"
+  },
+  {
+    "path": "gruvbox/a_mountain_range_with_snow.png",
+    "width": 3840,
+    "height": 2160,
+    "bytes": 2755860,
+    "sha": "5a378d35ce7c7a5a9db550325628584c3dcff91e"
+  },
+  {
+    "path": "gruvbox/abstract-darkhole.png",
+    "width": 1792,
+    "height": 1024,
+    "bytes": 3654833,
+    "sha": "b9d5f356977e02a801aaf081a267d9544d4fa1da"
+  },
+  {
+    "path": "gruvbox/brown_city_planet_pixelart.jpg",
+    "width": 3360,
+    "height": 1890,
+    "bytes": 2036509,
+    "sha": "ea7e8f2741e2b5822f4ab1fc556e7fbb2472af21"
+  },
+  {
+    "path": "gruvbox/chinatown-pixelart.jpg",
+    "width": 2880,
+    "height": 1620,
+    "bytes": 4693019,
+    "sha": "20ce43111dc80d8ddfb75d063f71ecf336d7ccc6"
+  },
+  {
+    "path": "gruvbox/cyberpunk_animestyle_gruv.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 275592,
+    "sha": "f9df8f123f90b25152a052f19b5e673b86ba8569"
+  },
+  {
+    "path": "gruvbox/dragon.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 184404,
+    "sha": "1d454ba3eec02a2c578c3a48e64fc824434fa198"
+  },
+  {
+    "path": "gruvbox/earth.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 1906235,
+    "sha": "3b98fecc5dea42d81cebc57ec140fb93f3709a7e"
+  },
+  {
+    "path": "gruvbox/galaxy.png",
+    "width": 3840,
+    "height": 2400,
+    "bytes": 751004,
+    "sha": "141aba681df83484fff1c277704b831c9cef4301"
+  },
+  {
+    "path": "gruvbox/ghibli-japanese-walled-garden.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 4177456,
+    "sha": "21faf0c714e683f6ed27952027823d105157a2e3"
+  },
+  {
+    "path": "gruvbox/girl-reading-book-pixelart.jpg",
+    "width": 2880,
+    "height": 1620,
+    "bytes": 56439,
+    "sha": "f67c92ab1b8650a19cdc596ec882da8e8b9c4d99"
+  },
+  {
+    "path": "gruvbox/gruv-sushi-streets.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 914253,
+    "sha": "2de6284fdb7eb59725fddf2de29e2f597aff515b"
+  },
+  {
+    "path": "gruvbox/gruvbox_minimal_space.png",
+    "width": 2560,
+    "height": 1600,
+    "bytes": 58482,
+    "sha": "65d74d8c226332b28686fe714f82420180b06e85"
+  },
+  {
+    "path": "gruvbox/gruvbox_mountains_dark.png",
+    "width": 3840,
+    "height": 2160,
+    "bytes": 4237362,
+    "sha": "f4759a29c4e62aedc8f8858b34c947ea4d530491"
+  },
+  {
+    "path": "gruvbox/gruvbx_solar-system.jpg",
+    "width": 3840,
+    "height": 2160,
+    "bytes": 780150,
+    "sha": "1c48f909073b6cf35309aff93ba2229559492fb1"
+  },
+  {
+    "path": "gruvbox/nvim.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 14613,
+    "sha": "6688252e5bf64c60f22947d17fc6b6ba23fb3770"
+  },
+  {
+    "path": "gruvbox/pixel_gruvbox_cyberpunkish.png",
+    "width": 3840,
+    "height": 1638,
+    "bytes": 7493803,
+    "sha": "6c53400ca9c14a8ebbc56e92200045c7e9a529e4"
+  },
+  {
+    "path": "gruvbox/pixel_gruvbox_cyberpunkish2.png",
+    "width": 3840,
+    "height": 1512,
+    "bytes": 5562254,
+    "sha": "55286bb8048b2ce181a12d54731b44913079592b"
+  },
+  {
+    "path": "gruvbox/pixelart.jpg",
+    "width": 3000,
+    "height": 1692,
+    "bytes": 151188,
+    "sha": "d5afcba442ac6e0d92e05313eaf8ce6ed7c49747"
+  },
+  {
+    "path": "gruvbox/satellite-apocalipse.jpg",
+    "width": 1920,
+    "height": 1084,
+    "bytes": 655890,
+    "sha": "dcd38dd7e3a62538dcbdfed9b4998e7d6c822efc"
+  },
+  {
+    "path": "gruvbox/space-shuttle.png",
+    "width": 2880,
+    "height": 1800,
+    "bytes": 503415,
+    "sha": "bdd6e77051776b569746cbb343c7d0d3586a4c26"
+  },
+  {
+    "path": "gruvbox/stray-city.jpg",
+    "width": 2560,
+    "height": 1440,
+    "bytes": 1226330,
+    "sha": "6a1d12a63946906ce7c093b0960291fcc5cfc1de"
+  },
+  {
+    "path": "gruvbox/vim.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 38709,
+    "sha": "fb29a4b363d4efc6bcdbfe0eba578c4de27b062b"
+  },
+  {
+    "path": "light/antiguidade.png",
+    "width": 2500,
+    "height": 1406,
+    "bytes": 1498404,
+    "sha": "eb47759a09195a6e9fd0050f903353506e672864"
+  },
+  {
+    "path": "light/planeta.png",
+    "width": 2560,
+    "height": 1600,
+    "bytes": 459583,
+    "sha": "2929d69aa252a0eb858b4b9ca3833615effe83cc"
+  },
+  {
+    "path": "light/romaold.jpg",
+    "width": 2000,
+    "height": 1556,
+    "bytes": 306169,
+    "sha": "129eaa9327186b433940f9a45737070857e694c9"
+  },
+  {
+    "path": "red_pink/darksouls_gravelord_nito.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 2539417,
+    "sha": "33d906970d5dc22f0d8a209233656b77a5b6bc90"
+  },
+  {
+    "path": "red_pink/gruvboxified_pixel_black_hole.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 38407,
+    "sha": "5c9715a370c9183c9c99e7b681464f43abba51c5"
+  },
+  {
+    "path": "red_pink/gruvboxified_pixelart_universe_redish_gruv.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 101451,
+    "sha": "d7ab29640e0fd6030aeff6ce889f749f72137862"
+  },
+  {
+    "path": "red_pink/montmartre.jpg",
+    "width": 2048,
+    "height": 1366,
+    "bytes": 309222,
+    "sha": "d2841362fb6a4c2e66ba0d4448e7e5098783db8c"
+  },
+  {
+    "path": "red_pink/painting_samurai.jpg",
+    "width": 3840,
+    "height": 1793,
+    "bytes": 773298,
+    "sha": "70ad9705a3656aff33ffecc0f59f844da4f41047"
+  },
+  {
+    "path": "red_pink/pixel_black_hole.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 62897,
+    "sha": "a09e041b3f43c8788b1f7273df7b76136cb6dee8"
+  },
+  {
+    "path": "red_pink/pixelart_universe_redish.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 448371,
+    "sha": "317a1656d4f02b15bc6e794e5cb50d1b1dc60e44"
+  },
+  {
+    "path": "red_pink/reflexo-cool-sky.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 3722271,
+    "sha": "6f37299c97f27be724b251195038d3289ddd5aaf"
+  }
+]

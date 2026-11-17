@@ -124,6 +124,10 @@ a:hover {
     align-items: start;
   }
 
+  .shell.is-wide {
+    max-width: 1180px;
+  }
+
   .rail {
     position: sticky;
     top: 24px;
@@ -138,6 +142,22 @@ a:hover {
     max-width: 680px;
     margin: 0;
     padding-top: 52px;
+  }
+
+  .main-col.is-wide {
+    max-width: 940px;
+  }
+}
+
+@media (min-width: 1180px) {
+  .main-col.is-wide {
+    max-width: 960px;
+    width: min(960px, calc(100vw - max(24px, calc(25vw - 270px)) - 268px));
+    margin-left: max(
+      calc(max(24px, calc(25vw - 270px)) + 220px),
+      calc(50% - 480px)
+    );
+    margin-right: 0;
   }
 }
 
@@ -175,6 +195,7 @@ a:hover {
 }
 
 .avatar-slot {
+  display: block;
   width: 128px;
   height: 128px;
   border: 1px solid var(--rule);
@@ -182,6 +203,11 @@ a:hover {
   border-radius: 8px;
   overflow: hidden;
   flex-shrink: 0;
+  text-decoration: none;
+}
+
+.rail-name-link {
+  text-decoration: none;
 }
 
 @media (max-width: 819px) {
@@ -231,18 +257,30 @@ a:hover {
   font-size: 12px;
 }
 
+.rail-nav a {
+  text-decoration: none;
+  color: var(--muted);
+  padding: 2px 0;
+}
+
+.rail-nav a.rail-page-link {
+  margin-top: 6px;
+  padding-top: 8px;
+  border-top: 1px solid var(--rule);
+}
+
 @media (max-width: 819px) {
   .rail-nav {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 6px 14px;
   }
-}
 
-.rail-nav a {
-  text-decoration: none;
-  color: var(--muted);
-  padding: 2px 0;
+  .rail-nav a.rail-page-link {
+    margin-top: 0;
+    padding-top: 2px;
+    border-top: none;
+  }
 }
 
 .rail-nav a:hover,
@@ -562,6 +600,386 @@ a:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 8px;
+}
+
+/* wallpapers gallery */
+.wp-head {
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.wp-head-meta {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.wp-lead {
+  margin: 0 0 18px;
+  font-size: 1rem;
+  color: var(--ink-2);
+}
+
+.wp-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 14px;
+  margin-bottom: 20px;
+}
+
+.wp-cats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.wp-cat-btn,
+.wp-btn,
+.wp-link-btn {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  padding: 4px 10px;
+  border: 1px solid var(--rule);
+  background: var(--surface);
+  color: var(--ink-2);
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: border-color 140ms ease, color 140ms ease, background-color 140ms ease;
+}
+
+.wp-cat-btn:hover,
+.wp-btn:hover,
+.wp-link-btn:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.wp-cat-btn.is-active,
+.wp-btn.is-primary {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--bg);
+  font-weight: 500;
+}
+
+.wp-btn:disabled,
+.wp-dl-btn:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.wp-search-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.wp-search {
+  font-family: var(--mono);
+  font-size: 12px;
+  padding: 5px 10px;
+  width: 190px;
+  border: 1px solid var(--rule);
+  border-radius: 5px;
+  background: var(--surface);
+  color: var(--ink);
+  outline: none;
+  transition: border-color 140ms ease;
+}
+
+.wp-search::placeholder {
+  color: var(--muted);
+}
+
+.wp-search:focus {
+  border-color: var(--ink);
+}
+
+.wp-count {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.wp-empty {
+  padding: 36px 0;
+  border-top: 1px solid var(--rule);
+  color: var(--ink-2);
+}
+
+.wp-empty p {
+  margin: 0 0 8px;
+}
+
+.wp-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+@media (max-width: 899px) {
+  .wp-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 540px) {
+  .wp-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wp-search {
+    width: 100%;
+  }
+
+  .wp-search-wrap {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.wp-card {
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: var(--surface);
+  overflow: hidden;
+  transition: border-color 140ms ease;
+}
+
+.wp-card:hover {
+  border-color: var(--ink);
+}
+
+.wp-thumb-btn {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  padding: 0;
+  border: none;
+  background: var(--bg);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.wp-thumb {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 220ms ease;
+}
+
+.wp-card:hover .wp-thumb {
+  transform: scale(1.025);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wp-thumb {
+    transition: none;
+  }
+
+  .wp-card:hover .wp-thumb {
+    transform: none;
+  }
+}
+
+.wp-card-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 10px;
+  border-top: 1px solid var(--rule);
+}
+
+.wp-card-text {
+  min-width: 0;
+}
+
+.wp-card-title {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.35;
+}
+
+.wp-card-sub {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.35;
+}
+
+.wp-dl-btn {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--mono);
+  font-size: 12px;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: var(--bg);
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: border-color 140ms ease, color 140ms ease;
+}
+
+.wp-dl-btn:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+/* wallpaper preview modal */
+.wp-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(11, 12, 14, 0.78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.wp-dialog {
+  width: min(1080px, 100%);
+  max-height: 92vh;
+  background: var(--bg);
+  color: var(--ink);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.wp-dialog-head,
+.wp-dialog-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 14px;
+  background: var(--surface);
+}
+
+.wp-dialog-head {
+  border-bottom: 1px solid var(--rule);
+}
+
+.wp-dialog-foot {
+  border-top: 1px solid var(--rule);
+  flex-wrap: wrap;
+}
+
+.wp-dialog-title-wrap {
+  min-width: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+}
+
+.wp-dialog-title {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wp-dialog-meta {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.wp-dialog-stage {
+  position: relative;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  min-height: 220px;
+}
+
+.wp-stage-frame {
+  position: relative;
+  width: min(100%, calc((92vh - 140px) * var(--wp-ratio, 1.6)));
+  aspect-ratio: var(--wp-ratio, 1.6);
+  max-height: calc(92vh - 140px);
+}
+
+.wp-stage-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.wp-stage-raw {
+  opacity: 0;
+  transition: opacity 160ms ease;
+}
+
+.wp-stage-raw.is-loaded {
+  opacity: 1;
+}
+
+.wp-stage-status {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  padding: 3px 8px;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: var(--surface);
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.wp-dialog-nav,
+.wp-dialog-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .wp-backdrop {
+    padding: 10px;
+  }
+
+  .wp-dialog-stage {
+    padding: 8px;
+  }
+
+  .wp-stage-frame {
+    width: min(100%, calc((92vh - 170px) * var(--wp-ratio, 1.6)));
+    max-height: calc(92vh - 170px);
+  }
 }
 
 @media print {

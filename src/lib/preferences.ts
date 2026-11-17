@@ -1,8 +1,18 @@
 export type Lang = "en" | "pt";
 export type ThemeMode = "light" | "dark";
+export type PageRoute = "cv" | "wallpapers";
 
 const LANG_KEY = "tac-lang";
 const THEME_KEY = "tac-theme";
+
+export function readRoute(pathname = typeof window !== "undefined" ? window.location.pathname : "/") {
+  const clean = pathname.replace(/\/index\.html$/, "").replace(/\/+$/, "");
+  return clean.endsWith("/wallpapers") ? "wallpapers" : "cv";
+}
+
+export function routeHref(route: PageRoute, baseUrl = "/") {
+  return route === "wallpapers" ? `${baseUrl}wallpapers/` : baseUrl;
+}
 
 function readStorage(key: string) {
   if (typeof window === "undefined") return null;
@@ -25,13 +35,17 @@ export function readInitialLang(): Lang {
   return readStorage(LANG_KEY) === "pt" ? "pt" : "en";
 }
 
-export function applyLang(lang: Lang) {
+export function applyLang(lang: Lang, route: PageRoute = "cv") {
   if (typeof document === "undefined") return;
   document.documentElement.lang = lang === "pt" ? "pt-BR" : "en";
-  document.title =
-    lang === "pt"
-      ? "Thiago Amado Costa — Currículo"
-      : "Thiago Amado Costa — Curriculum Vitae";
+  if (route === "wallpapers") {
+    document.title = "Thiago Amado Costa — Wallpapers";
+  } else {
+    document.title =
+      lang === "pt"
+        ? "Thiago Amado Costa — Currículo"
+        : "Thiago Amado Costa — Curriculum Vitae";
+  }
   writeStorage(LANG_KEY, lang);
 }
 
